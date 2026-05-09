@@ -118,7 +118,7 @@ export default function StudioPage() {
   const tabFlowers = activeTab === 'focal' ? FOCAL_FLOWERS : activeTab === 'greenery' ? GREENERY : FILLERS
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden" style={{ background: '#DFE0DC' }}>
+    <div className="fixed inset-0 flex flex-col overflow-hidden" style={{ background: '#DFE0DC' }}>
       {/* Top bar */}
       <div className="flex items-center justify-between px-4 md:px-6 py-3 shrink-0">
         <a href="/" className="text-sm opacity-50 hover:opacity-80 transition-opacity" style={{ color: '#2C2C2A' }}>

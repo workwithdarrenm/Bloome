@@ -219,7 +219,7 @@ export default function Canvas({
       {/* Selection toolbar - z-40 */}
       {selectedFlower && (
         <div
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 md:bottom-6 flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 rounded-full shadow-lg max-w-[calc(100%-2rem)] overflow-x-auto"
+          className="absolute left-1/2 -translate-x-1/2 top-3 md:top-auto md:bottom-6 flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 rounded-full shadow-lg max-w-[calc(100%-2rem)] overflow-x-auto"
           style={{ zIndex: 40, background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(8px)' }}
           onClick={e => e.stopPropagation()}
         >
