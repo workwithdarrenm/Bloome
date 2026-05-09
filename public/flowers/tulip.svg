@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" width="120" height="180">
+  <!-- Stem -->
+  <path d="M60 175 Q57 145 60 105" stroke="#5A7A4A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Leaf left -->
+  <path d="M60 150 Q35 140 28 118 Q38 130 60 142" fill="#6B8F5A" stroke="#5A7A4A" stroke-width="0.5"/>
+  <!-- Leaf right -->
+  <path d="M60 125 Q85 115 90 95 Q76 108 60 120" fill="#7BA06A" stroke="#6B8F5A" stroke-width="0.5"/>
+  <!-- Tulip head - left outer petal -->
+  <path d="M60 105 Q42 90 40 68 Q45 52 55 48 Q60 58 60 75" fill="#E8547A" stroke="#D4456B" stroke-width="0.5"/>
+  <!-- Tulip head - right outer petal -->
+  <path d="M60 105 Q78 90 80 68 Q75 52 65 48 Q60 58 60 75" fill="#E8547A" stroke="#D4456B" stroke-width="0.5"/>
+  <!-- Tulip head - center petal -->
+  <path d="M60 105 Q52 85 55 58 Q60 45 65 58 Q68 85 60 105" fill="#F06B8C" stroke="#E05A7C" stroke-width="0.5"/>
+  <!-- Inner petal highlights -->
+  <path d="M60 100 Q55 80 57 60" stroke="#F8A0B8" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M60 100 Q65 80 63 60" stroke="#F8A0B8" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+</svg>

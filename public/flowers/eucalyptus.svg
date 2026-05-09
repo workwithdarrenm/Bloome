@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 180" width="80" height="180">
+  <!-- Main stem -->
+  <path d="M40 175 Q38 148 40 40" stroke="#6B8A70" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Leaf pairs -->
+  <ellipse cx="40" cy="155" rx="12" ry="8" fill="#8FB090" transform="rotate(-20 40 155)"/>
+  <ellipse cx="40" cy="155" rx="10" ry="7" fill="#A0C0A0" transform="rotate(20 40 155)"/>
+  <ellipse cx="40" cy="135" rx="13" ry="9" fill="#8FB090" transform="rotate(-25 40 135)"/>
+  <ellipse cx="40" cy="135" rx="11" ry="8" fill="#A0C0A0" transform="rotate(25 40 135)"/>
+  <ellipse cx="40" cy="114" rx="13" ry="9" fill="#8FB090" transform="rotate(-20 40 114)"/>
+  <ellipse cx="40" cy="114" rx="11" ry="8" fill="#A0C0A0" transform="rotate(20 40 114)"/>
+  <ellipse cx="40" cy="93" rx="12" ry="8" fill="#8FB090" transform="rotate(-25 40 93)"/>
+  <ellipse cx="40" cy="93" rx="10" ry="7" fill="#A0C0A0" transform="rotate(25 40 93)"/>
+  <ellipse cx="40" cy="73" rx="11" ry="8" fill="#8FB090" transform="rotate(-20 40 73)"/>
+  <ellipse cx="40" cy="73" rx="9" ry="6" fill="#A0C0A0" transform="rotate(20 40 73)"/>
+  <ellipse cx="40" cy="55" rx="10" ry="7" fill="#8FB090" transform="rotate(-15 40 55)"/>
+  <ellipse cx="40" cy="55" rx="8" ry="6" fill="#A0C0A0" transform="rotate(15 40 55)"/>
+  <!-- Midvein lines -->
+  <path d="M30 155 Q40 157 50 153" stroke="#6B8A70" stroke-width="0.7" fill="none"/>
+  <path d="M30 135 Q40 137 50 133" stroke="#6B8A70" stroke-width="0.7" fill="none"/>
+  <path d="M30 114 Q40 116 50 112" stroke="#6B8A70" stroke-width="0.7" fill="none"/>
+</svg>

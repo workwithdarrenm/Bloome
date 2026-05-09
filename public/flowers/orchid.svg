@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" width="120" height="180">
+  <!-- Stem -->
+  <path d="M60 175 Q58 150 62 115 Q64 90 58 60" stroke="#5A7A4A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Aerial roots -->
+  <path d="M60 160 Q48 158 42 170" stroke="#8BA870" stroke-width="1.5" fill="none"/>
+  <path d="M60 140 Q72 138 78 148" stroke="#8BA870" stroke-width="1.5" fill="none"/>
+  <!-- Leaf -->
+  <path d="M60 155 Q35 145 30 125 Q46 135 60 148" fill="#6B8F5A"/>
+  <path d="M62 130 Q88 118 90 96 Q74 110 62 125" fill="#7BA06A"/>
+  <!-- Orchid bloom - sepals (3) -->
+  <path d="M58 85 Q44 68 46 52 Q52 46 58 58 Q58 72 58 85" fill="#D4A0C8"/>
+  <path d="M62 85 Q76 68 74 52 Q68 46 62 58 Q62 72 62 85" fill="#D4A0C8"/>
+  <path d="M60 82 Q60 62 56 48 Q60 40 64 48 Q60 62 60 82" fill="#C890BC"/>
+  <!-- Petals (2 lateral) -->
+  <path d="M58 78 Q38 72 34 60 Q40 52 52 58 Q56 68 58 78" fill="#E0B0D8"/>
+  <path d="M62 78 Q82 72 86 60 Q80 52 68 58 Q64 68 62 78" fill="#E0B0D8"/>
+  <!-- Lip (labellum) -->
+  <path d="M60 85 Q50 90 48 100 Q52 108 60 106 Q68 108 72 100 Q70 90 60 85" fill="#9B4FA0"/>
+  <path d="M60 90 Q55 92 54 98 Q57 103 60 102 Q63 103 66 98 Q65 92 60 90" fill="#C470C8" opacity="0.7"/>
+  <!-- Column -->
+  <circle cx="60" cy="85" r="4" fill="#F0E0F0"/>
+  <circle cx="60" cy="85" r="2" fill="#D8C0D8"/>
+  <!-- Spots on lip -->
+  <circle cx="56" cy="97" r="1.5" fill="#6B2870" opacity="0.5"/>
+  <circle cx="64" cy="97" r="1.5" fill="#6B2870" opacity="0.5"/>
+</svg>

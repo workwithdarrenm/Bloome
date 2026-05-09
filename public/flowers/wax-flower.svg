@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" width="100" height="160">
+  <!-- Main stem -->
+  <path d="M50 155 Q48 132 50 105 Q52 80 48 50" stroke="#6B8A70" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Branches -->
+  <path d="M50 132 Q36 124 28 112" stroke="#7A9A78" stroke-width="1.8" fill="none"/>
+  <path d="M50 118 Q64 110 72 98" stroke="#7A9A78" stroke-width="1.8" fill="none"/>
+  <path d="M50 100 Q34 90 26 76" stroke="#7A9A78" stroke-width="1.8" fill="none"/>
+  <path d="M50 83 Q66 73 74 60" stroke="#7A9A78" stroke-width="1.8" fill="none"/>
+  <!-- Small leaves along stems -->
+  <ellipse cx="38" cy="122" rx="5" ry="3" fill="#7A9060" transform="rotate(-30 38 122)"/>
+  <ellipse cx="64" cy="106" rx="5" ry="3" fill="#8AA070" transform="rotate(30 64 106)"/>
+  <ellipse cx="36" cy="84" rx="5" ry="3" fill="#7A9060" transform="rotate(-30 36 84)"/>
+  <ellipse cx="66" cy="67" rx="5" ry="3" fill="#8AA070" transform="rotate(30 66 67)"/>
+  <!-- Wax flowers - 5-petal star shape -->
+  <!-- flower at branch tips and along stems -->
+  <g transform="translate(28 112)">
+    <path d="M0-6 L1.5-1 L6-1 L2.5 2 L4 7 L0 4 L-4 7 L-2.5 2 L-6-1 L-1.5-1 Z" fill="#E8A0C0" stroke="#D08AAA" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#F5E070"/>
+  </g>
+  <g transform="translate(72 98)">
+    <path d="M0-6 L1.5-1 L6-1 L2.5 2 L4 7 L0 4 L-4 7 L-2.5 2 L-6-1 L-1.5-1 Z" fill="#E8A0C0" stroke="#D08AAA" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#F5E070"/>
+  </g>
+  <g transform="translate(26 76)">
+    <path d="M0-6 L1.5-1 L6-1 L2.5 2 L4 7 L0 4 L-4 7 L-2.5 2 L-6-1 L-1.5-1 Z" fill="#EEB0D0" stroke="#D89ABB" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#F5E070"/>
+  </g>
+  <g transform="translate(74 60)">
+    <path d="M0-6 L1.5-1 L6-1 L2.5 2 L4 7 L0 4 L-4 7 L-2.5 2 L-6-1 L-1.5-1 Z" fill="#EEB0D0" stroke="#D89ABB" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#F5E070"/>
+  </g>
+  <g transform="translate(48 50)">
+    <path d="M0-6 L1.5-1 L6-1 L2.5 2 L4 7 L0 4 L-4 7 L-2.5 2 L-6-1 L-1.5-1 Z" fill="#F4C0D8" stroke="#E0AACC" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#F5E070"/>
+  </g>
+  <!-- Extra buds -->
+  <ellipse cx="40" cy="104" rx="4" ry="5" fill="#F0B8D0" transform="rotate(-15 40 104)"/>
+  <ellipse cx="62" cy="86" rx="4" ry="5" fill="#F0B8D0" transform="rotate(15 62 86)"/>
+  <ellipse cx="36" cy="66" rx="3.5" ry="4.5" fill="#EAA8C5" transform="rotate(-15 36 66)"/>
+</svg>

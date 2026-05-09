@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" width="120" height="180">
+  <!-- Stem -->
+  <path d="M60 175 Q58 140 60 100" stroke="#5A7A4A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <path d="M60 145 Q40 135 35 120 Q50 125 60 140" fill="#6B8F5A"/>
+  <path d="M60 130 Q80 120 85 105 Q70 115 60 128" fill="#7BA06A"/>
+  <!-- Petals outer ring -->
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF6B6B" transform="rotate(0 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF7070" transform="rotate(22.5 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF6B6B" transform="rotate(45 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF7575" transform="rotate(67.5 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF6B6B" transform="rotate(90 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF7070" transform="rotate(112.5 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF6B6B" transform="rotate(135 60 75)"/>
+  <ellipse cx="60" cy="75" rx="10" ry="22" fill="#FF7575" transform="rotate(157.5 60 75)"/>
+  <!-- Inner petals -->
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF8C8C" transform="rotate(11.25 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF9090" transform="rotate(33.75 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF8C8C" transform="rotate(56.25 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF9090" transform="rotate(78.75 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF8C8C" transform="rotate(101.25 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF9090" transform="rotate(123.75 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF8C8C" transform="rotate(146.25 60 75)"/>
+  <ellipse cx="60" cy="75" rx="7" ry="16" fill="#FF9090" transform="rotate(168.75 60 75)"/>
+  <!-- Center disc -->
+  <circle cx="60" cy="75" r="12" fill="#2C1A0E"/>
+  <circle cx="60" cy="75" r="8" fill="#3D2410"/>
+  <!-- Pollen dots -->
+  <circle cx="57" cy="72" r="1.5" fill="#F4A828"/>
+  <circle cx="63" cy="72" r="1.5" fill="#F4A828"/>
+  <circle cx="60" cy="69" r="1.5" fill="#F4A828"/>
+  <circle cx="60" cy="78" r="1.5" fill="#F4A828"/>
+  <circle cx="56" cy="77" r="1" fill="#E8961A"/>
+  <circle cx="64" cy="77" r="1" fill="#E8961A"/>
+</svg>

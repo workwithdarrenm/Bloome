@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" width="120" height="180">
+  <!-- Stem -->
+  <path d="M60 175 Q58 148 60 105" stroke="#5A7A4A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <path d="M60 148 Q38 138 33 120 Q47 128 60 142" fill="#6B8F5A"/>
+  <path d="M60 132 Q83 122 87 104 Q72 114 60 127" fill="#7BA06A"/>
+  <!-- Spider petals - long, thin, curling at tips - outer ring -->
+  <path d="M60 80 Q52 62 42 45 Q50 52 58 70" stroke="#F5D080" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q70 62 78 45 Q70 52 62 70" stroke="#F5D080" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q42 72 26 68 Q34 72 54 76" stroke="#F0C870" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q78 72 94 68 Q86 72 66 76" stroke="#F0C870" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q44 90 32 96 Q40 88 56 82" stroke="#ECC060" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q76 90 88 96 Q80 88 64 82" stroke="#ECC060" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q54 98 50 115 Q56 100 60 85" stroke="#EFC868" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q66 98 70 115 Q64 100 60 85" stroke="#EFC868" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Mid ring petals - slightly different angles -->
+  <path d="M60 80 Q47 56 40 36 Q48 46 58 68" stroke="#F8DC90" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q73 56 80 36 Q72 46 62 68" stroke="#F8DC90" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q34 64 20 54 Q32 62 54 74" stroke="#F4D488" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M60 80 Q86 64 100 54 Q88 62 66 74" stroke="#F4D488" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Center disc -->
+  <circle cx="60" cy="80" r="10" fill="#C8960A"/>
+  <circle cx="60" cy="80" r="7" fill="#D4A818"/>
+  <circle cx="60" cy="80" r="4" fill="#E8C030"/>
+</svg>

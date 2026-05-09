@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" width="320" height="440">
+  <defs>
+    <!-- Center highlight gradient for the main cone -->
+    <linearGradient id="coneCenter" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E2B8B0"/>
+      <stop offset="30%"  stop-color="#F5D4CE"/>
+      <stop offset="50%"  stop-color="#FAE0DA"/>
+      <stop offset="70%"  stop-color="#F5D4CE"/>
+      <stop offset="100%" stop-color="#E2B8B0"/>
+    </linearGradient>
+    <!-- Side cone gradient -->
+    <linearGradient id="coneSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#D0A8A0"/>
+      <stop offset="100%" stop-color="#E8C4BC"/>
+    </linearGradient>
+    <linearGradient id="coneSideR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E8C4BC"/>
+      <stop offset="100%" stop-color="#D0A8A0"/>
+    </linearGradient>
+    <!-- Stem gradient -->
+    <linearGradient id="stemG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#D8B0A8"/>
+      <stop offset="50%"  stop-color="#ECCAC2"/>
+      <stop offset="100%" stop-color="#D8B0A8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── LEFT CONE SECTION ────────────────────────────────────────── -->
+  <path d="
+    M 155 272
+    Q 132 268 105 248
+    Q 78 226 64 196
+    Q 52 168 58 140
+    Q 64 114 80 98
+    Q 94 84 110 90
+    Q 120 76 134 62
+    Q 142 52 150 46
+    L 158 272
+    Z
+  " fill="url(#coneSide)"/>
+
+  <!-- ── RIGHT CONE SECTION (mirror) ──────────────────────────────── -->
+  <path d="
+    M 165 272
+    Q 188 268 215 248
+    Q 242 226 256 196
+    Q 268 168 262 140
+    Q 256 114 240 98
+    Q 226 84 210 90
+    Q 200 76 166 62
+    Q 158 52 150 46
+    L 162 272
+    Z
+  " fill="url(#coneSideR)"/>
+
+  <!-- ── CENTER MAIN CONE ──────────────────────────────────────────── -->
+  <path d="
+    M 160 272
+    Q 134 266 110 244
+    Q 88 220 82 190
+    Q 77 162 86 136
+    Q 96 112 114 96
+    Q 130 82 148 76
+    Q 150 68 152 62
+    Q 154 68 160 76
+    Q 152 68 150 62
+    Q 152 62 160 72
+    Q 178 78 194 94
+    Q 212 110 222 136
+    Q 232 162 226 192
+    Q 220 222 198 244
+    Q 175 266 160 272
+    Z
+  " fill="url(#coneCenter)"/>
+
+  <!-- Oops — fix center cone path (clean redraw) -->
+  <path d="
+    M 160 272
+    Q 136 265 112 242
+    Q 90 218 84 188
+    Q 79 160 89 134
+    Q 99 110 118 94
+    Q 134 80 148 74
+    Q 149 66 150 56
+    Q 151 66 152 74
+    Q 166 80 182 94
+    Q 201 110 211 134
+    Q 221 160 216 188
+    Q 210 218 188 242
+    Q 164 265 160 272
+    Z
+  " fill="url(#coneCenter)"/>
+
+  <!-- Subtle center fold crease lines for paper texture -->
+  <path d="M 148 58 Q 146 130 144 200 Q 143 235 144 268" stroke="#D8B0A8" stroke-width="1.2" fill="none" opacity="0.45"/>
+  <path d="M 152 58 Q 154 130 156 200 Q 157 235 156 268" stroke="#D8B0A8" stroke-width="1.2" fill="none" opacity="0.45"/>
+
+  <!-- Left cone edge shadow -->
+  <path d="M 134 62 Q 132 130 134 200 Q 136 238 142 268" stroke="#C8A098" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Right cone edge shadow -->
+  <path d="M 166 62 Q 168 130 166 200 Q 164 238 158 268" stroke="#C8A098" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- ── CINCH + STEM BELOW ─────────────────────────────────────────── -->
+  <path d="
+    M 118 272
+    Q 134 280 150 282
+    Q 166 280 182 272
+    L 185 440
+    L 115 440
+    Z
+  " fill="url(#stemG)"/>
+
+  <!-- Stem left shadow -->
+  <path d="M 115 278 L 115 440" stroke="#C4A09A" stroke-width="6" fill="none" opacity="0.3"/>
+  <!-- Stem right shadow -->
+  <path d="M 185 278 L 185 440" stroke="#C4A09A" stroke-width="6" fill="none" opacity="0.3"/>
+
+  <!-- Green paper peeking at bottom of stem -->
+  <path d="M 115 400 Q 105 420 112 440 L 188 440 Q 195 420 185 400 Q 168 410 150 412 Q 132 410 115 400 Z" fill="#C8D6A8" opacity="0.7"/>
+
+  <!-- ── RIBBON WRAP ────────────────────────────────────────────────── -->
+  <path d="M 112 272 Q 150 286 188 272 Q 188 284 150 298 Q 112 284 112 272 Z" fill="#F0ECE6" stroke="#E0D5CE" stroke-width="0.5"/>
+
+  <!-- ── BOW — Left loop ────────────────────────────────────────────── -->
+  <path d="
+    M 143 278
+    Q 122 256 112 242
+    Q 102 228 108 218
+    Q 115 210 126 220
+    Q 136 230 142 248
+    Q 145 260 143 278
+    Z
+  " fill="white" stroke="#DDD5CC" stroke-width="1"/>
+  <!-- Left loop inner shadow -->
+  <path d="M 140 272 Q 124 254 116 240" stroke="#C8C0B8" stroke-width="1" fill="none" opacity="0.7"/>
+
+  <!-- ── BOW — Right loop ───────────────────────────────────────────── -->
+  <path d="
+    M 177 278
+    Q 198 256 208 242
+    Q 218 228 212 218
+    Q 205 210 194 220
+    Q 184 230 178 248
+    Q 175 260 177 278
+    Z
+  " fill="white" stroke="#DDD5CC" stroke-width="1"/>
+  <!-- Right loop inner shadow -->
+  <path d="M 180 272 Q 196 254 204 240" stroke="#C8C0B8" stroke-width="1" fill="none" opacity="0.7"/>
+
+  <!-- ── BOW — Knot center ──────────────────────────────────────────── -->
+  <ellipse cx="160" cy="278" rx="10" ry="7" fill="#F5F1EC" stroke="#DDD5CC" stroke-width="1"/>
+
+  <!-- ── RIBBON TAILS ───────────────────────────────────────────────── -->
+  <!-- Left tail -->
+  <path d="M 152 285 Q 140 310 132 332 Q 126 348 130 358" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 152 285 Q 140 310 132 332 Q 126 348 130 358" stroke="#EAE2D8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Right tail -->
+  <path d="M 168 285 Q 180 310 188 332 Q 194 348 190 358" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 168 285 Q 180 310 188 332 Q 194 348 190 358" stroke="#EAE2D8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

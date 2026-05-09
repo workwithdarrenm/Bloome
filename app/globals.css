@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Reenie+Beanie&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #DFE0DC;
+  --bouquet-front: #F0D0C8;
+  --bouquet-back: #C9D6B0;
+  --stone: #C7C2AB;
+  --text: #2C2C2A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'DM Serif Display', serif;
+}
+
+.handwritten {
+  font-family: 'Reenie Beanie', cursive;
+}

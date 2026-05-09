@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" width="120" height="180">
+  <!-- Stem -->
+  <path d="M60 175 Q58 148 60 115" stroke="#5A7A4A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Flower stem to spathe -->
+  <path d="M60 115 Q55 95 50 80" stroke="#5A7A4A" stroke-width="2" fill="none"/>
+  <!-- Leaf stem -->
+  <path d="M60 115 Q68 95 70 75" stroke="#6B8F5A" stroke-width="2" fill="none"/>
+  <!-- Spathe (the large heart-shaped bract) -->
+  <path d="M50 80 Q36 64 38 50 Q40 36 52 34 Q58 32 62 40 Q66 32 72 34 Q84 36 82 50 Q80 64 66 78 Q60 84 50 80" fill="#FF5555" stroke="#E04040" stroke-width="0.5"/>
+  <!-- Spathe highlight/sheen -->
+  <path d="M58 42 Q52 52 50 65 Q54 72 58 76" stroke="#FF8888" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Spadix -->
+  <path d="M60 78 Q64 65 68 52 Q66 44 62 42" stroke="#F4C842" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M60 78 Q64 65 68 52 Q66 44 62 42" stroke="#F8D860" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- Leaf -->
+  <path d="M70 75 Q90 60 92 42 Q78 55 70 70" fill="#5A8040" stroke="#4A6E34" stroke-width="0.5"/>
+  <!-- Leaf vein -->
+  <path d="M70 75 Q82 58 90 44" stroke="#7AAA60" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Petiolate base -->
+  <path d="M60 115 Q40 108 36 92 Q50 100 60 110" fill="#6B8F5A"/>
+</svg>

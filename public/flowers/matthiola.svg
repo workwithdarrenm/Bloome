@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" width="120" height="180">
+  <!-- Main stem -->
+  <path d="M60 175 Q59 148 60 50" stroke="#5A7A4A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Side branches -->
+  <path d="M60 120 Q48 112 44 100" stroke="#6B8F5A" stroke-width="2" fill="none"/>
+  <path d="M60 110 Q72 102 76 90" stroke="#6B8F5A" stroke-width="2" fill="none"/>
+  <path d="M60 95 Q50 87 46 76" stroke="#6B8F5A" stroke-width="2" fill="none"/>
+  <path d="M60 85 Q70 77 74 66" stroke="#6B8F5A" stroke-width="2" fill="none"/>
+  <!-- Leaves -->
+  <path d="M60 148 Q40 140 36 125 Q50 132 60 142" fill="#6B8F5A"/>
+  <path d="M60 135 Q80 126 84 110 Q70 118 60 130" fill="#7BA06A"/>
+  <!-- Small flowers along spike - bottom -->
+  <circle cx="44" cy="100" r="6" fill="#9B7BB0"/>
+  <circle cx="41" cy="100" r="4" fill="#B090C8"/>
+  <circle cx="47" cy="100" r="4" fill="#B090C8"/>
+  <circle cx="44" cy="96" r="4" fill="#C0A0D8"/>
+  <circle cx="44" cy="104" r="3" fill="#9B7BB0" opacity="0.7"/>
+  <!-- flowers - right branch -->
+  <circle cx="76" cy="90" r="6" fill="#9B7BB0"/>
+  <circle cx="73" cy="90" r="4" fill="#B090C8"/>
+  <circle cx="79" cy="90" r="4" fill="#B090C8"/>
+  <circle cx="76" cy="86" r="4" fill="#C0A0D8"/>
+  <!-- flowers - left 2nd -->
+  <circle cx="46" cy="76" r="5" fill="#A888C0"/>
+  <circle cx="43" cy="75" r="3.5" fill="#C0A0D8"/>
+  <circle cx="49" cy="75" r="3.5" fill="#C0A0D8"/>
+  <circle cx="46" cy="72" r="3.5" fill="#D0B8E8"/>
+  <!-- flowers - right 2nd -->
+  <circle cx="74" cy="66" r="5" fill="#A888C0"/>
+  <circle cx="71" cy="65" r="3.5" fill="#C0A0D8"/>
+  <circle cx="77" cy="65" r="3.5" fill="#C0A0D8"/>
+  <circle cx="74" cy="62" r="3.5" fill="#D0B8E8"/>
+  <!-- Top spike flowers -->
+  <circle cx="60" cy="55" r="5" fill="#B090C8"/>
+  <circle cx="60" cy="48" r="4.5" fill="#C0A0D8"/>
+  <circle cx="60" cy="42" r="4" fill="#D0B8E8"/>
+</svg>
