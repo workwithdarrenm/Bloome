@@ -218,20 +218,20 @@ export default function Canvas({
       {/* Selection toolbar - z-40 */}
       {selectedFlower && (
         <div
-          className="absolute left-1/2 -translate-x-1/2 bottom-6 flex items-center gap-3 px-4 py-2 rounded-full shadow-lg"
+          className="absolute left-1/2 -translate-x-1/2 bottom-24 md:bottom-6 flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 rounded-full shadow-lg max-w-[calc(100%-2rem)] overflow-x-auto"
           style={{ zIndex: 40, background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(8px)' }}
           onClick={e => e.stopPropagation()}
         >
           <button
             onClick={() => flipFlower(selectedFlower.id)}
-            className="px-3 py-1.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="px-3 py-1.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors shrink-0"
             style={{ color: '#2C2C2A' }}
             title="Flip"
           >
             ↔
           </button>
-          <div className="flex items-center gap-2">
-            <span className="text-xs opacity-50">Size</span>
+          <div className="flex items-center gap-1.5 shrink-0">
+            <span className="text-xs opacity-50 hidden md:inline">Size</span>
             <input
               type="range"
               min={0.3}
@@ -240,13 +240,14 @@ export default function Canvas({
               value={selectedFlower.scale}
               onChange={e => resizeFlower(selectedFlower.id, parseFloat(e.target.value))}
               onMouseUp={e => resizeFlowerCommit(selectedFlower.id, parseFloat((e.target as HTMLInputElement).value))}
-              className="w-24 accent-stone-800"
+              onTouchEnd={e => resizeFlowerCommit(selectedFlower.id, parseFloat((e.target as HTMLInputElement).value))}
+              className="w-20 md:w-24 accent-stone-800"
             />
-            <span className="text-xs opacity-50 w-8">{Math.round(selectedFlower.scale * 100)}%</span>
+            <span className="text-xs opacity-50 w-7">{Math.round(selectedFlower.scale * 100)}%</span>
           </div>
-          <div className="w-px h-5 bg-black/10" />
-          <div className="flex items-center gap-2">
-            <span className="text-xs opacity-50">Rotate</span>
+          <div className="w-px h-5 bg-black/10 shrink-0" />
+          <div className="flex items-center gap-1.5 shrink-0">
+            <span className="text-xs opacity-50 hidden md:inline">Rotate</span>
             <input
               type="range"
               min={-180}
@@ -255,13 +256,14 @@ export default function Canvas({
               value={selectedFlower.rotation ?? 0}
               onChange={e => rotateFlower(selectedFlower.id, parseFloat(e.target.value))}
               onMouseUp={e => rotateFlowerCommit(selectedFlower.id, parseFloat((e.target as HTMLInputElement).value))}
-              className="w-24 accent-stone-800"
+              onTouchEnd={e => rotateFlowerCommit(selectedFlower.id, parseFloat((e.target as HTMLInputElement).value))}
+              className="w-20 md:w-24 accent-stone-800"
             />
-            <span className="text-xs opacity-50 w-8">{Math.round(selectedFlower.rotation ?? 0)}°</span>
+            <span className="text-xs opacity-50 w-7">{Math.round(selectedFlower.rotation ?? 0)}°</span>
           </div>
           <button
             onClick={() => deleteFlower(selectedFlower.id)}
-            className="px-3 py-1.5 rounded-full text-sm hover:bg-red-50 transition-colors"
+            className="px-3 py-1.5 rounded-full text-sm hover:bg-red-50 transition-colors shrink-0"
             style={{ color: '#C0392B' }}
             title="Delete"
           >
