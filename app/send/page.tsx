@@ -145,45 +145,35 @@ export default function SendPage() {
               className="rounded-3xl overflow-hidden shadow-md"
               style={{ background: '#FFFFFF' }}
             >
-              <div
-                className="relative flex items-end justify-center overflow-hidden"
-                style={{ background: '#DFE0DC', height: 280 }}
-              >
-                {/* Back wrapper */}
-                <img
-                  src="/flowers/bouquet_back.svg"
-                  alt=""
-                  style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 260, height: 260, zIndex: 10, pointerEvents: 'none' }}
-                />
-                {/* Flowers */}
-                <div className="absolute inset-0" style={{ zIndex: 20 }}>
-                  {draft.placedFlowers.map(pf => {
-                    const flower = FLOWERS.find(f => f.id === pf.flowerId)
-                    if (!flower) return null
-                    return (
-                      <img
-                        key={pf.id}
-                        src={flower.svgPath}
-                        alt={flower.name}
-                        style={{
-                          position: 'absolute',
-                          left: `${pf.x}%`,
-                          top: `${pf.y}%`,
-                          transform: `translate(-50%,-50%) rotate(${pf.rotation ?? 0}deg) scale(${pf.scale * 0.7}) scaleX(${pf.flipped ? -1 : 1})`,
-                          width: 80,
-                          height: 80,
-                          pointerEvents: 'none',
-                        }}
-                      />
-                    )
-                  })}
+              {/* Render at the same canonical size as the reveal page (500×540 / 460×460 wrappers)
+                  then scale down to fit the 280px preview height — flowers stay in exact positions */}
+              <div style={{ background: '#DFE0DC', height: 280, position: 'relative', overflow: 'hidden' }}>
+                <div style={{
+                  position: 'absolute',
+                  width: 500,
+                  height: 540,
+                  top: 0,
+                  left: '50%',
+                  marginLeft: -250,
+                  transform: `scale(${280 / 540})`,
+                  transformOrigin: 'top center',
+                }}>
+                  <img src="/flowers/bouquet_back.svg" alt="" style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 460, height: 460, zIndex: 10, pointerEvents: 'none' }} />
+                  <div className="absolute inset-0" style={{ zIndex: 20 }}>
+                    {draft.placedFlowers.map((pf, i) => {
+                      const flower = FLOWERS.find(f => f.id === pf.flowerId)
+                      if (!flower) return null
+                      return (
+                        <div key={pf.id + i} style={{ position: 'absolute', left: `${pf.x}%`, top: `${pf.y}%`, transform: 'translate(-50%, -50%)', pointerEvents: 'none' }}>
+                          <div style={{ transform: `scale(${pf.scale}) rotate(${pf.rotation ?? 0}deg) scaleX(${pf.flipped ? -1 : 1})`, transformOrigin: 'center center' }}>
+                            <img src={flower.svgPath} alt={flower.name} style={{ width: 80, height: 80, display: 'block' }} draggable={false} />
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <img src="/flowers/bouquet_front.svg" alt="" style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 460, height: 460, zIndex: 30, pointerEvents: 'none' }} />
                 </div>
-                {/* Front wrapper */}
-                <img
-                  src="/flowers/bouquet_front.svg"
-                  alt=""
-                  style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 260, height: 260, zIndex: 30, pointerEvents: 'none' }}
-                />
               </div>
               <div className="p-4">
                 <p
