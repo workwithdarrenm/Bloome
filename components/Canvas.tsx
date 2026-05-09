@@ -86,6 +86,7 @@ export default function Canvas({
 
     const handleTouchMove = (e: TouchEvent) => {
       if (!dragging || !canvasRef.current) return
+      e.preventDefault()
       const touch = e.touches[0]
       const canvasRect = canvasRef.current.getBoundingClientRect()
       const x = ((touch.clientX - dragOffset.current.x - canvasRect.left) / canvasRect.width) * 100
@@ -105,7 +106,7 @@ export default function Canvas({
 
     window.addEventListener('mousemove', handleMouseMove)
     window.addEventListener('mouseup', handleMouseUp)
-    window.addEventListener('touchmove', handleTouchMove, { passive: true })
+    window.addEventListener('touchmove', handleTouchMove, { passive: false })
     window.addEventListener('touchend', handleMouseUp)
     return () => {
       window.removeEventListener('mousemove', handleMouseMove)
@@ -149,7 +150,7 @@ export default function Canvas({
   const selectedFlower = placedFlowers.find(f => f.id === selected)
 
   return (
-    <div className="relative w-full h-full select-none" ref={canvasRef} onClick={handleCanvasClick}>
+    <div className="relative w-full h-full select-none" ref={canvasRef} onClick={handleCanvasClick} style={{ touchAction: 'none' }}>
       {/* Back wrapper layer - z-10 */}
       <div className="absolute inset-0 flex items-end justify-center pointer-events-none" style={{ zIndex: 10 }}>
         <img
